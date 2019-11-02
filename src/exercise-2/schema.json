@@ -1,1 +1,45 @@
-{ }
+{
+ "schema": "http://json-schema.org/schema",
+ "id": "schematics-id",
+ "title": "title",
+ "type": "object",
+ "description": "description",
+ "properties": {
+     "dollarVariable": {
+       "description": "description",
+       "type": "string",
+       "$default": {
+         "$source": "argv",
+         "index": 0
+       },
+       "x-prompt": "預設變數"
+     },
+     "name": {
+       "description": "description",
+       "type": "string",
+       "default": "jason",
+       "x-prompt": "你的名字？"
+     },
+     "loveAngular": {
+       "description": "description",
+       "type": "boolean",
+       "default": "true",
+       "x-prompt": "吃飽了嗎"
+     },
+     "framework": {
+       "description": "description",
+       "type": "string",
+       "default": "value1",
+       "x-prompt": {
+         "message": "使用什麼框架",
+         "type": "list",
+         "items": [
+           { "value": "angular", "label": "ng" },
+           { "value": "react", "label": "react" },
+           { "value": "vue", "label": "vvv" }
+         ]
+       }
+     }
+ },
+ "required": []
+}

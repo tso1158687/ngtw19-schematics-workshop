@@ -5,6 +5,11 @@
       "description": "A blank schematic.",
       "factory": "./hello-world/index#helloWorld"
     },
+    "exercise-2": {
+      "description": "Exercise 2",
+      "factory": "./exercise-2/index#exercise2",
+      "schema": "./exercise-2/schema.json"
+    },
     "exercise-3": {
       "description": "Exercise 3",
       "factory": "./exercise-3/index#exercise3",
@@ -19,6 +24,10 @@
       "description": "Exercise 6",
       "factory": "./exercise-6/index#exercise6",
       "schema": "./exercise-6/schema.json"
+    },
+    "hello-jason": {
+      "description": "A blank schematic.",
+      "factory": "./hello-jason/index#helloJason"
     }
   }
 }
