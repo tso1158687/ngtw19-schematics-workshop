@@ -8,5 +8,7 @@ export class <%= classify(name) %>Component implements OnInit {
 
   constructor() { } 
 
-  ngOnInit() { }
+  ngOnInit() { 
+    console.log("<%= hello %>");
+  }
 }

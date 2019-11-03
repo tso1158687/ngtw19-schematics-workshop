@@ -16,6 +16,12 @@
       "type": "string",
       "default": ".",
       "message": "File path"
+    },
+    "hello": {
+      "description": "description",
+      "type": "string",
+      "default": "aaaaa",
+      "x-prompt": "console.log要顯示的東西"
     }
   },
   "required": ["name"]
